@@ -33,11 +33,10 @@ class StatsOverview extends StatsOverviewWidget
 
             Stat::make(
                 'Today Attendance',
-                Attendance::whereDate('date', today())->count()
-            )
+                Attendance::whereDate('date', today())->count()   )
                 ->description('Checked in Today')
                 ->descriptionIcon('heroicon-o-clock')
-                ->color('primary'), ,
+                ->color('primary'), 
         ];
     }
 }
